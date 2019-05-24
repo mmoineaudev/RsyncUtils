@@ -22,3 +22,7 @@ dryrun-full:
 
 populate-test: 
 	./metrics.sh createALotOfFiles.sh '1 2 3 4 5 6 lol' metrics.metrics out.out
+clean-test-env:
+	rm -rf ./test
+	rm metrics.metrics
+	rm out.out

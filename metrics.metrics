@@ -1,0 +1,12 @@
+createALotOfFiles.sh 1 2 3 4 5 6 lol
+-----------------------------------
+Nombre de coeurs : 8 coeurs
+Frequence : 1681.580 Hz
+Memoire disponible sur la machine :
+MemTotal:        8050664 kB
+MemFree:         4465040 kB
+-----------------------------------
+0 s :
+MemTotal: 8050664 kB MemFree: 4464124 kB
+-----------------------------------
+Temps d'execution :  millisecondes
