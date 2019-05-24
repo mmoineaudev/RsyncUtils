@@ -1,0 +1,24 @@
+rm -rf ./test
+rm *.metrics
+rm *.out
+./createALotOfFiles.sh 1 2 3 4 5 6 7 8 9
+done
+./metrics.sh rsyncforbigfiles.sh '-v -e ssh --checksum --recursive -P /home/asus/Desktop/work/RsyncUtils/test miagem1@192.168.43.192:/tmp ' rsync.metrics rsync.out
+rsyncforbigfiles.sh -v -e ssh --checksum --recursive -P /home/asus/Desktop/work/RsyncUtils/test miagem1@192.168.43.192:/tmp  starts at 1558707766951926932
+Le script s'est execute en 9 secondes
+rm -rf ./test
+rm *.metrics
+rm *.out
+./createALotOfFiles.sh 1 2 3 4 5 6 7 8 9
+done
+./metrics.sh rsyncforbigfiles.sh '-v -e ssh --checksum --recursive -P /home/asus/Desktop/work/RsyncUtils/test miagem1@192.168.43.192:/tmp ' rsync.metrics rsync.out
+rsyncforbigfiles.sh -v -e ssh --checksum --recursive -P /home/asus/Desktop/work/RsyncUtils/test miagem1@192.168.43.192:/tmp  starts at 1558707780088803982
+Le script s'est execute en 9 secondes
+rm -rf ./test
+rm *.metrics
+rm *.out
+./createALotOfFiles.sh 1 2 3 4 5 6 7 8 9
+done
+./metrics.sh rsyncforbigfiles.sh '-v -e ssh --checksum --recursive -P /home/asus/Desktop/work/RsyncUtils/test miagem1@192.168.43.192:/tmp ' rsync.metrics rsync.out
+rsyncforbigfiles.sh -v -e ssh --checksum --recursive -P /home/asus/Desktop/work/RsyncUtils/test miagem1@192.168.43.192:/tmp  starts at 1558707791768529546
+Le script s'est execute en 6 secondes

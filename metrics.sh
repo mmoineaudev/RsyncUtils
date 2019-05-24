@@ -27,8 +27,8 @@ fi
 ## Creation des fichiers de sortie ##
 
 touch "$3"
-echo "${1} ${2}" > $3 # Reinitialise le fichier
-touch "$4"
+echo "${1} ${2}" >> $3 # Reinitialise le fichier
+touch "$4" >> $3
 
 ## Initialisation des compteurs ##
 
@@ -49,8 +49,7 @@ separator >> $3
 echo "${1} ${2} starts at ${STARTTIME}"
 
 logfile=$(mktemp)
-printf "["
-./$1 $2 > $4 && echo 0 > $logfile & # permet de boucler en attendant la fin d'une commande (https://unix.stackexchange.com/questions/124106/shell-script-wait-for-background-command)
+./$1 $2 >> $4 && echo 0 > $logfile & # permet de boucler en attendant la fin d'une commande (https://unix.stackexchange.com/questions/124106/shell-script-wait-for-background-command)
 ## Wait for it. The [ ! -s $logfile ] is true while the file is 
 ## empty. The -s means "check that the file is NOT empty" so ! -s
 ## means the opposite, check that the file IS empty. So, since
@@ -66,7 +65,6 @@ while [ ! -s $logfile ]; do
     sleep 3
 done
 
-echo "]"
 separator >> $3
 
 
