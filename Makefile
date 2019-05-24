@@ -31,11 +31,10 @@ compression-ssh-checksum:
 	./metrics.sh rsyncforbigfiles.sh '-v $(SH)$(PROTOCOL)$(COMPRESSION)$(CHECKSUM)$(RECURSIVE)$(PROGRESS)$(SOURCE)$(DESTINATION)' rsync.metrics rsync.out
 
 ssh-checksum:
-	make clean-test-env populate-test
 	./metrics.sh rsyncforbigfiles.sh '-v $(SH)$(PROTOCOL)$(CHECKSUM)$(RECURSIVE)$(PROGRESS)$(SOURCE)$(DESTINATION)' rsync.metrics rsync.out
 
 populate-test: 
-	./metrics.sh createALotOfFiles.sh '1 2 3 4 5 6 lol' metrics.metrics out.out
+	./createALotOfFiles.sh 1 2 3 4 5 6 7 8 9
 
 clean:
 	rm -rf ./test
