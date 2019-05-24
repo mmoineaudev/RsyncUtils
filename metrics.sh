@@ -8,13 +8,7 @@
 # !/bin/ksh 
 
 ## fonctions
-# Affichage de la barre de progression
-displayProgression () {
-    printf "." 
-    sleep 0.25    
-    printf "." 
-    sleep 0.25  
-}
+
 # Mise en forme du rapport
 separator () {
     echo "-----------------------------------" 
@@ -65,11 +59,11 @@ printf "["
 while [ ! -s $logfile ]; do 
     #CPU_USAGE=`cat <(grep 'cpu ' /proc/stat) <(sleep 1 && grep 'cpu ' /proc/stat) | awk -v RS="" '{print ($13-$2+$15-$4)*100/($13-$2+$15-$4+$16-$5) "%"}'`
     CURRENTTIME=`date +%s%N`
-    displayProgression
-    CURRENTDURATION=$(( (CURRENTTIME-STARTTIME)/1000000 ))
-    echo "$(( CURRENTDURATION/1000 )) s :" >> $3
+    CURRENTDURATION=$(((CURRENTTIME-STARTTIME)/1000))
+    echo "$((CURRENTDURATION/1000)) millisecondes :" >> $3
     echo $(cat /proc/meminfo | head -n 2) >> $3
     #echo "Utilisation des processeurs : $CPU_USAGE" >> $3
+    sleep 3
 done
 
 echo "]"
@@ -78,10 +72,10 @@ separator >> $3
 
 ## Enregistrement des compteurs ##
 ENDTIME=`date +%s%N`
-DURATION=$(( (ENDTIME-STARTTIME)/1000000 ))
+DURATION=$(((ENDTIME-STARTTIME)/1000000))
 echo "Temps d'execution : ${DURATION} millisecondes" >> $3
 if [ $DURATION -gt 3000 ]; then
-    echo "Le script s'est execute en $(( DURATION/1000 )) secondes"
+    echo "Le script s'est execute en $((DURATION/1000)) secondes"
 else
     echo "Le script s'est execute en ${DURATION} millisecondes"
 fi

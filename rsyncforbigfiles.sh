@@ -19,6 +19,6 @@ echo $PARAMS
 
 
 # Execution 
-#$(rsync $PARAMS)
-
+echo $(rsync $PARAMS)
+echo 'Script done'
 exit 0;
