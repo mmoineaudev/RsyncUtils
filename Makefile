@@ -17,8 +17,12 @@ CHECKSUM:=--checksum # Peut causer une grosse perte de perf. car impose la véri
 DELETE:=--remove-source-files # ...chez le FS emetteur 
 # ./metrics.sh rsyncforbigfiles.sh "--dry-run $(RECURSIVE) $(RELATIVE) $(SOURCE) $(DESTINATION)" metrics.log rsyncforbigfiles.out
 
+#Default 
+#make clean-test-env populate-test dryrun-full
+#make populate-test dryrun-full
+
 dryrun-full:
-	./rsyncforbigfiles.sh --dry-run $(SOURCE) $(DESTINATION) $(SH) $(RECURSIVE) $(RELATIVE) $(NOTEMPCOPY) $(PROGRESS) $(PROTOCOL) $(TEMP_DIR) $(COMPRESSION) $(REQUEST_TYPE) $(CHECKSUM) $(DELETE)
+	./metrics.sh rsyncforbigfiles.sh '--dry-run $(SOURCE) $(DESTINATION) $(SH) $(RECURSIVE) $(RELATIVE) $(NOTEMPCOPY) $(PROGRESS) $(PROTOCOL) $(TEMP_DIR) $(COMPRESSION) $(REQUEST_TYPE) $(CHECKSUM) $(DELETE)'  metrics.metrics out.out
 
 populate-test: 
 	./metrics.sh createALotOfFiles.sh '1 2 3 4 5 6 lol' metrics.metrics out.out
