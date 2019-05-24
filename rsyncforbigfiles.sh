@@ -19,6 +19,6 @@ echo $PARAMS
 
 
 # Execution 
-$(rsync $PARAMS)
+#$(rsync $PARAMS)
 
 exit 0;

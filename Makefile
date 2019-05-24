@@ -1,8 +1,8 @@
 # Configuration : supprimez les valeurs des paramètres non souhaités
 
 ## Obligatoire
-SOURCE:= # CheminAbsoluDuFSEmetteur
-DESTINATION:=  # URIVersLaCible # user@server:/path
+SOURCE:=/path/path/path # CheminAbsoluDuFSEmetteur
+DESTINATION:=user@server:/path # URIVersLaCible # user@server:/path
 SH:=-e # --rsh=sh # Permet de specifier le sh a utiliser chez la destination
 ##Facultatifs
 RECURSIVE:=--recursive
@@ -18,7 +18,7 @@ DELETE:=--remove-source-files # ...chez le FS emetteur
 # ./metrics.sh rsyncforbigfiles.sh "--dry-run $(RECURSIVE) $(RELATIVE) $(SOURCE) $(DESTINATION)" metrics.log rsyncforbigfiles.out
 
 dryrun-full:
-	./rsyncforbigfiles.sh --dry-run $(RECURSIVE) $(RELATIVE) $(SOURCE) $(DESTINATION)
+	./rsyncforbigfiles.sh --dry-run $(SOURCE) $(DESTINATION) $(SH) $(RECURSIVE) $(RELATIVE) $(NOTEMPCOPY) $(PROGRESS) $(PROTOCOL) $(TEMP_DIR) $(COMPRESSION) $(REQUEST_TYPE) $(CHECKSUM) $(DELETE)
 
 populate-test: 
 	./metrics.sh createALotOfFiles.sh '1 2 3 4 5 6 lol' metrics.metrics out.out
