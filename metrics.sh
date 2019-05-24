@@ -46,7 +46,7 @@ STARTTIME=`date +%s%N`
 separator >> $3 
 echo "Nombre de coeurs : $(cat /proc/cpuinfo | grep -i "^processor" | wc -l) coeurs" >> $3
 echo "Frequence : $(cat /proc/cpuinfo | grep -i "^cpu MHz" | awk -F": " '{print $2}' | head -1) Hz" >> $3
-echo "Utilisation des processeurs 'a froid' : $(cat <(grep 'cpu ' /proc/stat) <(sleep 1 && grep 'cpu ' /proc/stat) | awk -v RS="" '{print ($13-$2+$15-$4)*100/($13-$2+$15-$4+$16-$5) "%"}')" >> $3
+#echo "Utilisation des processeurs 'a froid' : $(cat <(grep 'cpu ' /proc/stat) <(sleep 1 && grep 'cpu ' /proc/stat) | awk -v RS="" '{print ($13-$2+$15-$4)*100/($13-$2+$15-$4+$16-$5) "%"}')" >> $3
 echo "Memoire disponible sur la machine :" >> $3
 echo "$(cat /proc/meminfo | head -n 2)" >> $3
 separator >> $3
@@ -63,13 +63,13 @@ printf "["
 ## the command above will print into the file as soon as it's finished
 ## this loop will run as long as  the previous command si runnning.
 while [ ! -s $logfile ]; do 
-    CPU_USAGE=`cat <(grep 'cpu ' /proc/stat) <(sleep 1 && grep 'cpu ' /proc/stat) | awk -v RS="" '{print ($13-$2+$15-$4)*100/($13-$2+$15-$4+$16-$5) "%"}'`
+    #CPU_USAGE=`cat <(grep 'cpu ' /proc/stat) <(sleep 1 && grep 'cpu ' /proc/stat) | awk -v RS="" '{print ($13-$2+$15-$4)*100/($13-$2+$15-$4+$16-$5) "%"}'`
     CURRENTTIME=`date +%s%N`
     displayProgression
-    let CURRENTDURATION=(CURRENTTIME-STARTTIME)/1000000
+    CURRENTDURATION=$(((CURRENTTIME-STARTTIME)/1000000))
     echo "$((CURRENTDURATION/1000)) s :" >> $3
     echo $(cat /proc/meminfo | head -n 2) >> $3
-    echo "Utilisation des processeurs : $CPU_USAGE" >> $3
+    #echo "Utilisation des processeurs : $CPU_USAGE" >> $3
 done
 
 echo "]"
@@ -78,7 +78,7 @@ separator >> $3
 
 ## Enregistrement des compteurs ##
 ENDTIME=`date +%s%N`
-let DURATION=(ENDTIME-STARTTIME)/1000000
+DURATION=$(((ENDTIME-STARTTIME)/1000000)))
 echo "Temps d'execution : ${DURATION} millisecondes" >> $3
 if [ $DURATION -gt 3000 ]; then
     echo "Le script s'est execute en $((DURATION/1000)) secondes"
