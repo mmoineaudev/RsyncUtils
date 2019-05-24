@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>730</x>
+      <y>80</y>
+      <w>220</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Transferer un systeme de fichier
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1750</x>
+      <y>210</y>
+      <w>30</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>820</x>
+      <y>100</y>
+      <w>100</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>80.0;80.0;80.0;40.0;10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>860</x>
+      <y>180</y>
+      <w>220</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Choisir la destination</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>630</x>
+      <y>180</y>
+      <w>220</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Choisir la source</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>660</x>
+      <y>100</y>
+      <w>190</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;80.0;10.0;40.0;170.0;40.0;170.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1610</x>
+      <y>190</y>
+      <w>220</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Visualiser l'avancement</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>820</x>
+      <y>100</y>
+      <w>940</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>920.0;90.0;920.0;40.0;10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>820</x>
+      <y>100</y>
+      <w>330</w>
+      <h>360</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>310.0;340.0;310.0;40.0;10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1090</x>
+      <y>440</y>
+      <w>220</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Choisir le protocole</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>970</x>
+      <y>460</y>
+      <w>240</w>
+      <h>380</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;360.0;10.0;330.0;130.0;310.0;130.0;110.0;220.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1180</x>
+      <y>460</y>
+      <w>30</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>320</x>
+      <y>330</y>
+      <w>220</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Chemin absolu
+bg=black
+fg=white
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>410</x>
+      <y>200</y>
+      <w>340</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;130.0;10.0;100.0;320.0;40.0;320.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>960</x>
+      <y>280</y>
+      <w>140</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>URL
+bg=black
+fg=white
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>860</x>
+      <y>200</y>
+      <w>90</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;70.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1480</x>
+      <y>250</y>
+      <w>370</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Command example
+--
+-v, --verbose               increase verbosity
+--info=FLAGS            fine-grained informational verbosity
+--debug=FLAGS           fine-grained debug verbosity
+--
+       --progress              show progress during transfer
+        -P                          same as --partial --progress
+
+
+fg=black
+bg=green
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>860</x>
+      <y>820</y>
+      <w>170</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Compression
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1140</x>
+      <y>570</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Transport</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>820</x>
+      <y>300</y>
+      <w>30</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1180</x>
+      <y>460</y>
+      <w>510</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>490.0;110.0;490.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1630</x>
+      <y>570</y>
+      <w>240</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Recupération sur erreur</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1580</x>
+      <y>640</y>
+      <w>510</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>Command example
+--
+-B, --block-size=SIZE       force a fixed checksum block-size
+--
+-b, --backup                make backups (see --suffix &amp; --backup-dir)
+       --backup-dir=DIR        make backups into hierarchy based in DIR
+       --suffix=SUFFIX         backup suffix (default ~ w/o --backup-dir)
+--
+Peut causer une grosse perte de perf. car impose la vérification bilatérale
+       -c, --checksum
+--
+ --inplace
+              This option changes how rsync transfers a file when its data needs to be updated: instead of the default method of creating a new copy of the file and moving it into place when it is complete, rsync instead writes the
+              updated data directly to the destination file.
+              This option is useful for transferring large files with block-based changes or appended data, and also on systems that are disk bound, not network bound.  It can also help keep a copy-on-write filesystem snapshot from
+              diverging the entire contents of a file that only has minor changes.
+
+              The option implies --partial (since an interrupted transfer does not delete the file), but conflicts with --partial-dir and --delay-updates.
+--
+
+fg=black
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1810</x>
+      <y>590</y>
+      <w>30</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1300</x>
+      <y>650</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>ssh</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1180</x>
+      <y>590</y>
+      <w>190</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>170.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>820</x>
+      <y>100</y>
+      <w>1160</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>1140.0;90.0;1140.0;40.0;10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1870</x>
+      <y>190</y>
+      <w>210</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Supprimer après transfert</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1950</x>
+      <y>210</y>
+      <w>30</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1870</x>
+      <y>250</y>
+      <w>250</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Command example
+--
+fg=black
+bg=green
+
+Cf 
+layer=-1
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>100</x>
+      <y>400</y>
+      <w>440</w>
+      <h>310</h>
+    </coordinates>
+    <panel_attributes>Command example
+--
+-r, --recursive             recurse into directories
+-d ?? pareil ?? 
+--
+-R, --relative              use relative path names
+## Explication : 
+rsync -av /foo/bar/baz.c remote:/tmp/ =&gt; /tmp/baz.c
+rsync -avR /foo/bar/baz.c remote:/tmp/ =&gt; /tmp/foo/bar/baz.c
+--
+-p, --perms                 preserve permissions
+-E, --executability         preserve executability
+       --chmod=CHMOD           affect file and/or directory permissions
+-o, --owner                 preserve owner (super-user only)
+-g, --group                 preserve group
+--
+-t, --times                 preserve modification times
+--
+-W, --whole-file            copy files whole (w/o delta-xfer algorithm)
+(pas de delta)
+--
+       --exclude=PATTERN       exclude files matching PATTERN
+       --exclude-from=FILE     read exclude patterns from FILE
+       --include=PATTERN       don't exclude files matching PATTERN
+
+fg=black
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>650</x>
+      <y>0</y>
+      <w>380</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Test
+--
+--dry-run               perform a trial run with no changes made
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>820</x>
+      <y>40</y>
+      <w>30</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>410</x>
+      <y>350</y>
+      <w>30</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>720</x>
+      <y>270</y>
+      <w>210</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Choisir un shell de destination 
+et son paramétrage</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>940</x>
+      <y>200</y>
+      <w>110</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>90.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>580</x>
+      <y>340</y>
+      <w>480</w>
+      <h>420</h>
+    </coordinates>
+    <panel_attributes>Command example
+--
+-e, --rsh=COMMAND           specify the remote shell to use
+       --rsync-path=PROGRAM    specify the rsync to run on remote machine
+       --existing              skip creating new files on receiver
+       --ignore-existing       skip updating files that exist on receiver
+       --remove-source-files   sender removes synchronized files (non-dir)
+       --del                   an alias for --delete-during
+       --delete                delete extraneous files from dest dirs
+       --delete-before         receiver deletes before xfer, not during
+       --delete-during         receiver deletes during the transfer
+       --delete-delay          find deletions during, delete after
+       --delete-after          receiver deletes after transfer, not during
+       --delete-excluded       also delete excluded files from dest dirs
+       --ignore-missing-args   ignore missing source args without error
+       --delete-missing-args   delete missing source args from destination
+       --ignore-errors         delete even if there are I/O errors
+       --force                 force deletion of dirs even if not empty
+       --max-delete=NUM        don't delete more than NUM files
+       --max-size=SIZE         don't transfer any file larger than SIZE
+       --min-size=SIZE         don't transfer any file smaller than SIZE
+       --partial               keep partially transferred files
+       --partial-dir=DIR       put a partially transferred file into DIR
+       --delay-updates         put all updated files into place at end
+--
+-T, --temp-dir=DIR          create temporary files in directory DIR
+
+fg=black
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1900</x>
+      <y>290</y>
+      <w>210</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Choisir un shell de destination 
+et son paramétrage
+layer=-1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>740</x>
+      <y>900</y>
+      <w>540</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Command example
+--
+-z, --compress              compress file data during the transfer
+       --compress-level=NUM    explicitly set compression level
+       --skip-compress=LIST    skip compressing files with suffix in LISTfg=black
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>930</x>
+      <y>840</y>
+      <w>30</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1120</x>
+      <y>730</y>
+      <w>270</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Command example
+--
+-4, --ipv4                  prefer IPv4
+-6, --ipv6                  prefer IPv6
+--
+
+fg=black
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1180</x>
+      <y>590</y>
+      <w>30</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;140.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
