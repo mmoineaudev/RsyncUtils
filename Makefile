@@ -1,5 +1,5 @@
-# Configuration : supprimez les valeurs des paramètres non souhaités
-
+# ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #
+# ## ## ## ## ## ## ## ##OPTIONS UTILES POUR LE TRANSFERT DE GROS FICHIERS # ## ## ## ## ## ## ## #
 # ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #
 ## Obligatoire
 SOURCE:=/home/asus/Desktop/work/RsyncUtils/test # CheminAbsoluDuFSEmetteur
@@ -16,9 +16,8 @@ TEMP_DIR:=--temp-dir=/tmp/rsyncforbigfiles/ #a spécifier
 COMPRESSION:=-z # on peut ajouter --compress-level=NUM (entre 0 et 9) 
 CHECKSUM:=--checksum # Peut causer une grosse perte de perf. car impose la vérification bilaterale
 DELETE:=--remove-source-files # ...chez le FS emetteur 
+
 # ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #
-
-
 # ## ## ## ## ## ## ## ##CONFIGURATIONS ENVISAGEES## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #
 MINIMUMSSH:=-v $(SH)$(PROTOCOL)$(RECURSIVE)$(PROGRESS)$(SOURCE)$(DESTINATION)
 COMPRESSIONSSH:=-v $(SH)$(PROTOCOL)$(COMPRESSION)$(RECURSIVE)$(PROGRESS)$(SOURCE)$(DESTINATION)
